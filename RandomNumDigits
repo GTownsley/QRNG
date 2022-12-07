@@ -1,0 +1,12 @@
+from Random09 import random09
+
+def random(num_digits):
+  i=0
+  c = 0
+  while(i<num_digits):
+    ph = 0
+    ph = 10**(i)*random09()
+    c = c+ph
+    i = i+1
+
+  return (c)
