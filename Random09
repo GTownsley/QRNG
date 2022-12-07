@@ -1,0 +1,30 @@
+def random09():
+  c = 10
+  while (c>9):
+    job_sim4 = execute(qc4, aer_sim, shots=1)
+    sim_result4 = job_sim4.result()
+    counts = sim_result4.get_counts(qc4)
+    if counts == {'0000': 1}:
+      c = (0)  
+    elif counts == {'0001': 1}:
+      c = (1)  
+    elif counts == {'0010': 1}:
+      c = (2)  
+    elif counts == {'0011': 1}:
+      c = (3)
+    elif counts == {'0100': 1}:
+      c = (4)  
+    elif counts == {'0101': 1}:
+      c = (5)  
+    elif counts == {'0110': 1}:
+      c = (6)
+    elif counts == {'0111': 1}:
+      c = (7)
+    elif counts == {'1000': 1}:
+      c = (8)
+    elif counts == {'1001': 1}:
+      c = (9)
+    else:
+      c = (10)
+
+  return (c)
