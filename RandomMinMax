@@ -1,7 +1,7 @@
 from CoinFlip import coin_flip01
 
 def random(min, max):
-  n = max-min
+  n = max+1-min
   v = 1
   c = 0
   a = 0
