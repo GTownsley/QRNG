@@ -1,0 +1,17 @@
+from CoinFlip import coin_flip01
+
+def random(min, max):
+  n = max-min
+  v = 1
+  c = 0
+  a = 0
+  #loop meant to run inf, until we get c<n, so use while 0>-1, can't be met
+  while (a>-1):
+    v = 2*v
+    c = 2*c + coin_flip01()
+    if v >= n:
+      if c < n:
+        return (c+min)
+      else:
+        v = v-n
+        c = c-n
