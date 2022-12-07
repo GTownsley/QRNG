@@ -2,3 +2,5 @@ from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister, execute, 
 from qiskit.visualization import plot_histogram
 
 import math
+
+aer_sim = Aer.get_backend('aer_simulator')
