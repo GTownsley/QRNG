@@ -6,3 +6,12 @@ def coin_flip():
     return ('heads')
   else:
     return ('tails')
+    
+def coin_flip01():
+  job_sim = execute(qc, aer_sim, shots=1)
+  sim_result = job_sim.result()
+  counts = sim_result.get_counts(qc)
+  if counts == {'1': 1}:
+    return 1
+  else:
+    return 0
