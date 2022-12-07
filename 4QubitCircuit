@@ -1,0 +1,7 @@
+q = QuantumRegister(4)
+c = ClassicalRegister(4)
+qc4 = QuantumCircuit(q, c)
+
+qc4.h(q)
+qc4.measure(q, c)
+qc4.draw()
